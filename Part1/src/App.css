@@ -1,0 +1,58 @@
+*{
+    margin:0;
+    padding: 0;
+}
+header>h1{
+    text-align: center;
+}
+@media(min-width:768px){
+.input{
+    background: grey;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:30px;
+}
+.mybtn{
+    grid-column:2/3
+}
+.mybtn{
+        background:green;
+        border:1px solid black;
+        border-radius:5px;
+        padding: 10px
+    }
+    .mybtn:hover{
+        background: white;
+    }
+}
+@media(max-width:768px){
+    .wrapper{
+
+        background: grey;
+        display: grid;
+        grid-template-columns:100%;
+        grid-gap:30px;
+        justify-items: center;
+
+    }
+    
+    .input{
+        background: white;
+        margin-top:50px;
+    }
+    .input>div{
+        margin:20px;
+    }
+    .error{
+        text-align: center
+    }
+    .mybtn{
+        background:green;
+        border:1px solid black;
+        border-radius:5px;
+        padding: 10px
+    }
+    .mybtn:hover{
+        background: white;
+    }
+}
